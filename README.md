@@ -10,3 +10,9 @@ sudo luarocks install luacheck
 sudo luarocks install mobdebug
 sudo luarocks install luaunit
 ```
+
+Run day 1 with (substitute numbers for other days):
+```
+lua day1.lua
+lua test_day1.lua
+```
