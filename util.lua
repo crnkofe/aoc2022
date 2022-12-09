@@ -14,4 +14,15 @@ function util.is_main(_arg, ...)
     return false;
 end
 
+function util.sgn(n)
+    if n > 0 then
+        return 1
+    elseif n < 0 then
+        return -1
+    else
+        return 0
+    end
+
+end
+
 return util
