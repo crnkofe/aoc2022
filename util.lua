@@ -25,4 +25,15 @@ function util.sgn(n)
 
 end
 
+function util.slice (tbl, s, e)
+    local pos, new = 1, {}
+
+    for i = s, e do
+        new[pos] = tbl[i]
+        pos = pos + 1
+    end
+
+    return new
+end
+
 return util
