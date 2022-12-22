@@ -8,6 +8,16 @@ function point.p3(x, y, z)
     return {x=x, y=y, z=z}
 end
 
+function point.minint2()
+    local mi = math.mininteger
+    return point.p2(mi, mi)
+end
+
+function point.maxint2()
+    local mx = math.maxinteger
+    return point.p2(mx, mx)
+end
+
 function point.minint3()
     local mi = math.mininteger
     return point.p3(mi, mi, mi)
@@ -20,6 +30,11 @@ end
 
 function point.min3(pl, pr)
     return {x=math.min(pl.x, pr.x), y=math.min(pl.y, pr.y), z=math.min(pl.z, pr.z)}
+end
+
+
+function point.sum2(pl, pr)
+    return {x=pl.x + pr.x, y=pl.y + pr.y}
 end
 
 function point.sum3(pl, pr)
