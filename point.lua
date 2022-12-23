@@ -41,6 +41,14 @@ function point.sum3(pl, pr)
     return {x=pl.x + pr.x, y=pl.y + pr.y, z=pl.z + pr.z}
 end
 
+function point.min2(pl, pr)
+    return {x=math.min(pl.x, pr.x), y=math.min(pl.y, pr.y)}
+end
+
+function point.max2(pl, pr)
+    return {x=math.max(pl.x, pr.x), y=math.max(pl.y, pr.y)}
+end
+
 function point.max3(pl, pr)
     return {x=math.max(pl.x, pr.x), y=math.max(pl.y, pr.y), z=math.max(pl.z, pr.z)}
 end
